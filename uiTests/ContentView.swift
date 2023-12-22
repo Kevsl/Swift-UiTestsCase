@@ -42,9 +42,9 @@ struct ContentView: View {
                 
                 Button("Login", action: login)
                     .frame(width: 200, height: 44)
-                    .background(.blue)
-                    .foregroundStyle(.white)
+                    .background(Color.blue)
             }
+            
             }
             .alert(isPresented: $showAlert) {
                 Alert(title: Text("Login Failed"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
